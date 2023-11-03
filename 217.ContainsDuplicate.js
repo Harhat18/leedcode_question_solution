@@ -14,18 +14,16 @@
 // Output: false
 // Example 3:
 
-var containsDuplicate = function (nums) {
+let containsDuplicate = function (nums) {
   nums.sort();
   return hasDuplipcate(nums);
 };
 
 const hasDuplipcate = (nums) => {
-  for (let i = 0; i < nums.leght - 1; i++) {
+  for (let i = 0; i < nums.length - 1; i++) {
     const nextValue = i + 1;
     const isNextDuplicate = nums[i] === nums[nextValue];
     if (isNextDuplicate) return true;
   }
   return false;
 };
-
-containsDuplicate();
