@@ -15,15 +15,14 @@
 // Example 3:
 
 let containsDuplicate = function (nums) {
-  nums.sort();
-  return hasDuplipcate(nums);
+  nums.sort(); //rakamları sırala
+  return hasDuplipcate(nums); //sıralanmış diziyi kontrol et
 };
 
 const hasDuplipcate = (nums) => {
   for (let i = 0; i < nums.length - 1; i++) {
     const nextValue = i + 1;
-    const isNextDuplicate = nums[i] === nums[nextValue];
-    if (isNextDuplicate) return true;
+    if (nums[i] === nums[nextValue]) return true;
   }
   return false;
 };
