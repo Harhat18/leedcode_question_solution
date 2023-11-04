@@ -15,7 +15,6 @@
 // Example 3:
 
 let containsDuplicate = function (nums) {
-  nums.sort(); //rakamları sırala
   return hasDuplipcate(nums); //sıralanmış diziyi kontrol et
 };
 
